@@ -7,4 +7,11 @@ function setup() {
 function draw() {
     background(100, 100, 255);
     doodler.draw();
+    doodler.update();
+}
+
+function keyPressed() {
+    if (key == ' ') {
+        doodler.jump();
+    }
 }
