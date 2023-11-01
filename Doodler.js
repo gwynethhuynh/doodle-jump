@@ -15,6 +15,8 @@ class Doodler {
     }
 
     update() {
+        if (this.x + this.width < 0) this.x = width;
+        if (this.x > width) this.x = 0 - this.width;
         this.velocity += this.gravity;
         this.y += this.velocity;
 
